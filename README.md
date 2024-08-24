@@ -76,6 +76,8 @@ For questions or suggestions, please contact chenguiti.elmehdi@gmail.com.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
 ---
 ### Version Française
 # Classification et Analyse des Sentiments des Tweets Français parlant du Réchauffement Climatique
@@ -154,4 +156,3 @@ Pour toute question ou suggestion, veuillez contacter chenguiti.elmehdi@gmail.co
 
 ## Licence
 Ce projet est sous licence MIT. Voir le fichier [LICENCE](LICENSE) pour plus de détails.
-```
