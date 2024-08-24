@@ -3,7 +3,7 @@
 # French Climate Tweets Classification and Sentiment Analysis
 
 ## Overview
-This project aimed to analyze and classify French tweets related to climate change and drought using Natural Language Processing (NLP) and Machine Learning techniques. The process involved scraping tweets using the `snscrape` Python library, preprocessing the text to remove noise and standardize it, and manually labeling the dataset for sentiment polarity (positive or negative). The dataset was visualized through word clouds and co-occurrence networks to identify common themes and word associations.
+This project aimed to analyze and classify French tweets related to climate change and drought using Natural Language Processing (NLP) and Machine Learning techniques. The process involved scraping tweets using the `snscrape` Python library, preprocessing the text, and manually labeling the tweets for sentiment polarity (positive or negative). The dataset was visualized through word clouds and co-occurrence networks to identify common themes and word associations.
 
 Several Machine Learning models, including Naive Bayes, Support Vector Machines (SVM), and Random Forest, were trained and evaluated for their performance in predicting tweet polarity. Techniques such as oversampling and grid search were used to enhance model performance. Additionally, pretrained Word2Vec embeddings were fine-tuned on the dataset to improve text representation and classification accuracy.
 
@@ -23,7 +23,7 @@ The ultimate goal was to build robust models capable of accurately classifying t
 ## Project Structure
 The project is organized as follows:
 - `Twitter_Data_Scraping.ipynb`: Jupyter notebook for scraping tweets using the `snscrape` library.
-- `Tweets_Preprocessing.ipynb`: Notebook for preprocessing the scraped tweets, including text cleaning, normalization, and standardization.
+- `Tweets_Preprocessing.ipynb`: Notebook for preprocessing the scraped tweets.
 - `Tweets Polarity Predictions (TFIDF).ipynb`: Predicting tweet polarity using TF-IDF vectorization and machine learning models.
 - `Tweets Polarity Predictions (Word2Vec).ipynb`: Predicting tweet polarity using fine-tuned Word2Vec embeddings and machine learning models.
 - `Further_Analysis_of_Tweets.ipynb`: Additional analysis of tweets, including visualizations such as word clouds and co-occurrence networks.
@@ -81,7 +81,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 # Classification et Analyse des Sentiments des Tweets Français parlant du Réchauffement Climatique
 
 ## Vue d'ensemble
-Ce projet a pour but d'analyser et de classifier les tweets Français concernant le réchauffement climatique et la sécheresse en utilisant des techniques de traitement du langage naturel (NLP) et d'apprentissage automatique. Le processus a impliqué l'extraction des tweets avec la bibliothèque Python `snscrape`, le prétraitement des tweets, et l'étiquetage manuel de ces derniers en deux classes (positif ou négatif). Les données ont été visualisées à travers des nuages de mots et des réseaux de cooccurrence pour identifier les thèmes récurrents et les associations de mots.
+Ce projet a pour but d'analyser et de classifier les tweets Français concernant le réchauffement climatique et la sécheresse en utilisant des techniques de traitement du langage naturel (NLP) et d'apprentissage automatique. Le processus a impliqué l'extraction des tweets avec la bibliothèque Python `snscrape`, le prétraitement des tweets, et l'étiquetage manuel de ces derniers en deux classes (positif ou négatif). Les données ont été visualisées à travers des nuages de mots et des réseaux de cooccurrence pour identifier les termes récurrents et les associations de mots.
 
 Divers modèles d'apprentissage automatique ont été entraînés et évalués pour leur capacité à prédire la polarité des tweets. Des techniques comme le suréchantillonnage et la recherche en grille ont été utilisées pour améliorer les performances des modèles. En outre, des embeddings Word2Vec pré-entraînés ont été ajustés sur le jeu de données pour affiner la représentation du texte et améliorer la précision de la classification.
 
@@ -101,7 +101,7 @@ L'objectif ultime était de développer des modèles robustes capables de classi
 ## Structure du Projet
 Le projet est organisé comme suit :
 - `Twitter_Data_Scraping.ipynb` : Notebook Jupyter pour extraire des tweets en utilisant la bibliothèque `snscrape`.
-- `Tweets_Preprocessing.ipynb` : Notebook pour le prétraitement des tweets extraits, comprenant le nettoyage, la normalisation et la standardisation des textes.
+- `Tweets_Preprocessing.ipynb` : Notebook pour le prétraitement des tweets extraits, comprenant le nettoyage, la normalisation et la standardisation des tweets.
 - `Tweets Polarity Predictions (TFIDF).ipynb` : Prédiction de la polarité des tweets en utilisant la vectorisation TF-IDF et des modèles d'apprentissage automatique.
 - `Tweets Polarity Predictions (Word2Vec).ipynb` : Prédiction de la polarité des tweets en utilisant des embeddings Word2Vec ajustés et des modèles d'apprentissage automatique.
 - `Further_Analysis_of_Tweets.ipynb` : Analyse complémentaire des tweets, incluant des visualisations comme des nuages de mots et des réseaux de cooccurrence.
@@ -124,15 +124,15 @@ Le projet est organisé comme suit :
 
 ## Utilisation
 1. **Extraction des Données** : Utilisez le notebook `Twitter_Data_Scraping.ipynb` pour extraire les tweets avec la bibliothèque `snscrape`.
-2. **Prétraitement** : Prétraitez les tweets à l'aide du notebook `Tweets_Preprocessing.ipynb`. Cette étape comprend le nettoyage des textes, leur normalisation et leur étiquetage pour la polarité des sentiments.
-3. **Entraînement et Évaluation des Modèles** : Utilisez les notebooks `Tweets Polarity Predictions (TFIDF).ipynb` et `Tweets Polarity Predictions (Word2Vec).ipynb` pour former et évaluer les modèles d'apprentissage automatique.
+2. **Prétraitement** : Prétraitez les tweets à l'aide du notebook `Tweets_Preprocessing.ipynb`. Cette étape comprend le nettoyage des tweets et leur normalisation.
+3. **Entraînement et Évaluation des Modèles** : Utilisez les notebooks `Tweets Polarity Predictions (TFIDF).ipynb` et `Tweets Polarity Predictions (Word2Vec).ipynb` pour entraîner et évaluer les modèles d'apprentissage automatique.
 4. **Analyse Supplémentaire** : Explorez davantage les données avec `Further_Analysis_of_Tweets.ipynb`, qui inclut la création de nuages de mots et de réseaux de cooccurrence.
 
 ## Techniques de Modélisation
 - **Prétraitement des Textes** : Nettoyage et normalisation des textes pour éliminer le bruit et standardiser les données.
-- **Vectorisation TF-IDF** : Conversion des données textuelles en caractéristiques numériques à l'aide de la fréquence des termes et de l'inverse de la fréquence des documents.
-- **Embeddings Word2Vec** : Embeddings pré-entraînés ajustés sur le jeu de données pour améliorer la représentation des textes.
-- **Modèles d'Apprentissage Automatique** : Plusieurs modèles ont été formés, notamment :
+- **Vectorisation TF-IDF** : Conversion des données textuelles en caractéristiques numériques à l'aide de la vectorization TF-IDF.
+- **Embeddings Word2Vec** : Embeddings pré-entraînés ajustés sur le jeu de données pour améliorer la représentation des tweets.
+- **Modèles d'Apprentissage Automatique** : Plusieurs modèles ont été entraînés, notamment :
   - **Régression Logistique** : [`LogisticRegression`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
   - **MLP Classifier** : [`MLPClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html)
   - **SVC** : [`SVC`](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html)
