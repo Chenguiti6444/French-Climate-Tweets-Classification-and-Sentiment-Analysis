@@ -1,9 +1,9 @@
 ### English Version
 
-# French Climate Tweets Classification and Sentiment Analysis
+# French Global Warming Tweets Classification and Sentiment Analysis
 
 ## Overview
-This project aimed to analyze and classify French tweets related to climate change and drought using Natural Language Processing (NLP) and Machine Learning techniques. The process involved scraping tweets using the `snscrape` Python library, preprocessing the text, and manually labeling the tweets for sentiment polarity (positive or negative). The dataset was visualized through word clouds and co-occurrence networks to identify common themes and word associations.
+This project aimed to analyze and classify French tweets related to global warming and drought using Natural Language Processing (NLP) and Machine Learning techniques. The process involved scraping tweets using the `snscrape` Python library, preprocessing the text, and manually labeling the tweets for sentiment polarity (positive or negative). The dataset was visualized through word clouds and co-occurrence networks to identify common themes and word associations.
 
 Several Machine Learning models, including Naive Bayes, Support Vector Machines (SVM), and Random Forest, were trained and evaluated for their performance in predicting tweet polarity. Techniques such as oversampling and grid search were used to enhance model performance. Additionally, pretrained Word2Vec embeddings were fine-tuned on the dataset to improve text representation and classification accuracy.
 
